@@ -72,14 +72,8 @@ app.post("/signup",async(req,res)=>
             
         })
 
-app.listen(port,(error)=>{
-    if(!error)
-    {
-     console.log("Server Running on Port"+port);
-    }
-    else{
-     console.log("Error : "+error);
-    }
-})
+        app.listen(port, () => {
+            console.log('Server Running on Port 4000');
+        });
 
 
